@@ -35,11 +35,13 @@ This project implements an intelligent customer care agent designed to interact 
    ```
    pip install -r requirements.txt
    Usage
-   Start the Flask application:
+   ```
+
+Start the Flask application:
 
 ```
-
 python app.py
+
 The application will run on http://localhost:8000. Set up your WhatsApp webhook to point to this URL.
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
@@ -47,5 +49,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 License
 This project is licensed under the MIT License.
 
-Feel free to modify any sections to better fit your project's details!
 ```
