@@ -34,8 +34,8 @@ This project implements an intelligent customer care agent designed to interact 
 1. Clone the repository:
 
    ```
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/erickonguka/WhatsApp-Bot.git
+   cd WhatsApp-Bot
    ```
 
 2. Install the required packages:
@@ -46,10 +46,8 @@ This project implements an intelligent customer care agent designed to interact 
 ## Usage
 
 Start the Flask application:
-
-    ```
-    python app.py
-    ```
+`    python app.py
+   `
 
 The application will run on http://localhost:8000. Set up your WhatsApp webhook to point to this URL.
 Contributing
