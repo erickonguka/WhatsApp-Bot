@@ -46,8 +46,10 @@ This project implements an intelligent customer care agent designed to interact 
 ## Usage
 
 Start the Flask application:
-`    python app.py
-   `
+
+```
+python app.py
+```
 
 The application will run on http://localhost:8000. Set up your WhatsApp webhook to point to this URL.
 Contributing
