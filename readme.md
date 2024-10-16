@@ -36,19 +36,20 @@ This project implements an intelligent customer care agent designed to interact 
    ```
    git clone <repository-url>
    cd <repository-directory>
-
    ```
 
 2. Install the required packages:
    ```
    pip install -r requirements.txt
    ```
-   Usage
-   Start the Flask application:
 
-```
-python app.py
-```
+## Usage
+
+Start the Flask application:
+
+    ```
+    python app.py
+    ```
 
 The application will run on http://localhost:8000. Set up your WhatsApp webhook to point to this URL.
 Contributing
