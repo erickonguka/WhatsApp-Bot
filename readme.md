@@ -19,7 +19,15 @@ This project implements an intelligent customer care agent designed to interact 
 
 ## Project Structure
 
-. ├── core │ ├── engagement.py │ ├── user_data.py │ └── send_message.py ├── imports │ ├── training_data.txt │ └── formatting.txt ├── app.py └── requirements.txt
+├── core
+│ ├── engagement.py
+│ ├── user_data.py
+│ └── send_message.py
+├── imports
+│ ├── training_data.txt
+│ └── formatting.txt
+├── app.py
+└── requirements.txt
 
 ## Installation
 
@@ -34,19 +42,18 @@ This project implements an intelligent customer care agent designed to interact 
 2. Install the required packages:
    ```
    pip install -r requirements.txt
-   Usage
    ```
-
-Start the Flask application:
+   Usage
+   Start the Flask application:
 
 ```
 python app.py
+```
 
 The application will run on http://localhost:8000. Set up your WhatsApp webhook to point to this URL.
 Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+Contributions are welcome!
 
 License
 This project is licensed under the MIT License.
-
-```
