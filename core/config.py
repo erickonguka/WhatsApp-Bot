@@ -1,0 +1,5 @@
+import os
+import google.generativeai as genai
+genai.configure(api_key=os.environ["AI_API_KEY"])
+
+bearerToken = "EAAMHnyIaywIBO1YhVrpnV3Sjwie4nMuFZCOJvo4KR8NyRUrzjGGiOSkPyZAC82TzakOzxKAaEt1wps4kkbtkSZAa883ZCCQAtQhLbDqH9rWqGtyBZBZBWmbUvQfl70eB6rbo4oUppemkiA0nERTIfKJrkld8iVaCxEBTY5IWnKvrsKjnDxDYNKBGavMZBlZCoLZBA7xEt0MKFMZAqjkHdzGgeOwoxr97qojPX2Txn63wCY"
