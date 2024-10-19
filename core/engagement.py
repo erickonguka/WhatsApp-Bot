@@ -1,14 +1,6 @@
 import os
-from config import genai, agent_name, company_name, currency
+from config import genai, agent_name, company_name, currency, training_data, formatting
 from conversation import get_conversation_history, add_to_conversation_history
-
-base_dir = os.path.dirname(__file__)
-
-#link to your training data/info about your company
-training_data = os.path.join(base_dir, 'imports', 'training_data.txt') 
-
-#link to whatsapp formatting options
-formatting = os.path.join(base_dir, 'imports', 'formatting.txt')    
 
 def getTxt(path):
     try:
