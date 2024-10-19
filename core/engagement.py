@@ -1,11 +1,14 @@
 import os
-from config import genai, agent_name, company_name
+from config import genai, agent_name, company_name, currency
 from conversation import get_conversation_history, add_to_conversation_history
 
 base_dir = os.path.dirname(__file__)
 
-training_data = os.path.join(base_dir, 'imports', 'training_data.txt')
-formatting = os.path.join(base_dir, 'imports', 'formatting.txt')
+#link to your training data/info about your company
+training_data = os.path.join(base_dir, 'imports', 'training_data.txt') 
+
+#link to whatsapp formatting options
+formatting = os.path.join(base_dir, 'imports', 'formatting.txt')    
 
 def getTxt(path):
     try:
@@ -21,7 +24,8 @@ def engage_user(user_name, message, user_id):
     
     user_history = get_conversation_history(user_id)
     history_context = "\n".join([f"User: {msg['user']}\n{agent_name}: {msg['assistant']}" for msg in user_history])
-    
+
+    # You could also modify further here for clear prompting
     full_message = f"""
     You are {agent_name}, professional sales agent for {company_name}. Engage with {user_name}:
 
@@ -29,7 +33,7 @@ def engage_user(user_name, message, user_id):
     - Be interactive, direct, and insightful
     - Use concise, direct simple language
     - Follow pricing table for project budget estimation
-    - Use shillings, (Kenyan shillings) also known as bob
+    - Currency {currency} also known as bob
     - Close sales with:
       1. Formatted project summary
       2. Clear requirements
